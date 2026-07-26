@@ -31,7 +31,7 @@ Run the API locally and send requests to the available endpoints.
 
 
 ```markdown
-![API screenshot](./screenshot.png)
+![API screenshot](screenshot.png)
 ```
 
 ## CURL Output
