@@ -43,4 +43,18 @@ async def create_task(task: Task):
         tasks.append(task)
         return task
 
+@app.put("/tasks/{id}")
+def update_task(id:int, updatedTask: Task):
+    for i in range(len(tasks)):
+        if tasks[i]["id"] == id:
+            tasks[i] = updatedTask
+            return tasks[i]
+    
+        
+
+@app.delete("/tasks/{id}")
+def delete_task(id: int):
+    for i in range(len(tasks)):
+        if tasks[i]["id"] == id:
+            return tasks.pop(i)
 
